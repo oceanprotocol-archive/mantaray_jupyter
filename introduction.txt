@@ -1,0 +1,15 @@
+Welcome to Manta Ray on Ocean Protocol - a sandbox environment to test the latest developments in Ocean Protocol!
+
+Currently, Manta Ray provides several Jupyter Notebooks to help you get started with Ocean Protocol.
+
+JupyterLab is an open source IPython environment that runs in the browser. 
+
+JupyterLab can be run on your local machine, or in this case, it is hosted on a virtual machine on the cloud. 
+
+The VM git-clones the latest example scripts found in the Ocean Protocol mantaray project, designed by data scientists, for data scientists.
+
+When prompted for a login at the below link, type any string for a username, and no password.
+
+(At a later date, more authentication will be required, but for now, enjoy the free sandbox to explore Ocean Protocol!). 
+
+
