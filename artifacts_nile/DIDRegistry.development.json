@@ -1,0 +1,201 @@
+{
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x715018a6"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8da5cb5b"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8f32d59b"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xf2fde38b"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "did",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "checksum",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "updatedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "DIDAttributeRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipRenounced",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xc4d66de8"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_did",
+          "type": "bytes32"
+        },
+        {
+          "name": "_checksum",
+          "type": "bytes32"
+        },
+        {
+          "name": "_value",
+          "type": "string"
+        }
+      ],
+      "name": "registerAttribute",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x33a330bd"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "did",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getUpdateAt",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xfc7bd95a"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "did",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xdeb931a2"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061076a806100206000396000f30060806040526004361061008d5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166333a330bd8114610092578063715018a6146100f45780638da5cb5b146101095780638f32d59b1461013a578063c4d66de814610163578063deb931a214610184578063f2fde38b1461019c578063fc7bd95a146101bd575b600080fd5b34801561009e57600080fd5b50604080516020600460443581810135601f81018490048402850184019095528484526100f29482359460248035953695946064949201919081908401838280828437509497506101e79650505050505050565b005b34801561010057600080fd5b506100f26103f8565b34801561011557600080fd5b5061011e610462565b60408051600160a060020a039092168252519081900360200190f35b34801561014657600080fd5b5061014f610471565b604080519115158252519081900360200190f35b34801561016f57600080fd5b506100f2600160a060020a0360043516610482565b34801561019057600080fd5b5061011e60043561056b565b3480156101a857600080fd5b506100f2600160a060020a0360043516610586565b3480156101c957600080fd5b506101d56004356105a5565b60408051918252519081900360200190f35b600083815260666020526040902054839083908390600160a060020a031680158061021a5750600160a060020a03811633145b1515610296576040805160e560020a62461bcd02815260206004820152603060248201527f41747472696275746573206d757374206265207265676973746572656420627960448201527f2074686520444944206f776e6572732e00000000000000000000000000000000606482015290519081900360840190fd5b815161080010156102f1576040805160e560020a62461bcd02815260206004820152601060248201527f496e76616c69642075726c2073697a6500000000000000000000000000000000604482015290519081900360640190fd5b6040805180820182523380825243602080840182815260008d8152606683528681209551865473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03909116178655905160019095019490945584518082018390528581528a519581019590955289518b9593948d947ff106808c24744b31d6ef0fd5f06969228668945e12d218228e6c57af1f9659d1948d9490939192839260608401928701918190849084905b838110156103b457818101518382015260200161039c565b50505050905090810190601f1680156103e15780820380516001836020036101000a031916815260200191505b50935050505060405180910390a450505050505050565b610400610471565b151561040b57600080fd5b603354604051600160a060020a03909116907ff8df31144d9c2f0f6b59d69b8b98abd5459d07f2742c4df920b25aae33c6482090600090a26033805473ffffffffffffffffffffffffffffffffffffffff19169055565b603354600160a060020a031690565b603354600160a060020a0316331490565b60008054610100900460ff168061049c575061049c6105ba565b806104aa575060005460ff16155b1515610526576040805160e560020a62461bcd02815260206004820152602e60248201527f436f6e747261637420696e7374616e63652068617320616c726561647920626560448201527f656e20696e697469616c697a6564000000000000000000000000000000000000606482015290519081900360840190fd5b5060008054600161010061ff00198316811760ff1916919091179092550460ff16610550826105c0565b600080549115156101000261ff001990921691909117905550565b600090815260666020526040902054600160a060020a031690565b61058e610471565b151561059957600080fd5b6105a2816106c0565b50565b60009081526066602052604090206001015490565b303b1590565b60008054610100900460ff16806105da57506105da6105ba565b806105e8575060005460ff16155b1515610664576040805160e560020a62461bcd02815260206004820152602e60248201527f436f6e747261637420696e7374616e63652068617320616c726561647920626560448201527f656e20696e697469616c697a6564000000000000000000000000000000000000606482015290519081900360840190fd5b50600080546033805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03949094169390931790925561ff001980831661010090811760ff19166001179091169281900460ff16151502919091179055565b600160a060020a03811615156106d557600080fd5b603354604051600160a060020a038084169216907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e090600090a36033805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03929092169190911790555600a165627a7a72305820a58d044ce9b6e7e7ed3e07252ae7882813e3f4151d36fc87470be2219ea449990029",
+  "address": "0x75036ff443d6493bf5108df25700000b0e9975ec",
+  "version": "v0.6.12"
+}
