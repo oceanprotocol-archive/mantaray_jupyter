@@ -107,3 +107,5 @@ venv.bak/
 artifacts_spree
 consume-downloads
 squid_py.db
+artifacts_nile
+downloads_spree
