@@ -104,8 +104,10 @@ venv.bak/
 .mypy_cache/
 
 
+artifacts_spree/
 artifacts_spree
-consume-downloads
+consume-downloads/
 squid_py.db
-artifacts_nile
-downloads_spree
+artifacts_nile/
+downloads_spree/
+downloads_nile/
