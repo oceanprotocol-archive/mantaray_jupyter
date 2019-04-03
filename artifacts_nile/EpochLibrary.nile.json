@@ -1,0 +1,95 @@
+{
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_self",
+          "type": "EpochLibrary.EpochList storage"
+        },
+        {
+          "name": "_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isTimedOut",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xdde77bf0"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_self",
+          "type": "EpochLibrary.EpochList storage"
+        },
+        {
+          "name": "_id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isTimeLocked",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xf3b68c95"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_self",
+          "type": "EpochLibrary.Epoch storage"
+        }
+      ],
+      "name": "getEpochTimeOut",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x38ac766b"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_self",
+          "type": "EpochLibrary.Epoch storage"
+        }
+      ],
+      "name": "getEpochTimeLock",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x1e6af9c1"
+    }
+  ],
+  "bytecode": "0x6101ff610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3fe7300000000000000000000000000000000000000003014608060405260043610610072577c010000000000000000000000000000000000000000000000000000000060003504631e6af9c1811461007757806338ac766b146100a6578063dde77bf0146100c3578063f3b68c95146100fa575b600080fd5b6100946004803603602081101561008d57600080fd5b503561011d565b60408051918252519081900360200190f35b610094600480360360208110156100bc57600080fd5b503561013d565b6100e6600480360360408110156100d957600080fd5b508035906020013561015a565b604080519115158252519081900360200190f35b6100e66004803603604081101561011057600080fd5b508035906020013561019a565b60028101548154600091610137919063ffffffff6101ba16565b92915050565b6000610137826002015483600101546101ba90919063ffffffff16565b600081815260208390526040812060010154151561017a57506000610137565b60008281526020849052604090206101919061013d565b43119392505050565b60008181526020839052604081206101b19061011d565b43109392505050565b6000828201838110156101cc57600080fd5b939250505056fea165627a7a723058202b2af03cd7abfeaed2463793154414606af137dc033fe4725e575ab647560cb70029",
+  "address": "0x34fa1530C0B1a2106Bf84E81Cd9D654087fB93d2",
+  "version": "v0.9.0"
+}

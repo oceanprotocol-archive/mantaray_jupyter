@@ -108,6 +108,5 @@ artifacts_spree/
 artifacts_spree
 consume-downloads/
 squid_py.db
-artifacts_nile/
 downloads_spree/
 downloads_nile/
