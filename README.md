@@ -6,7 +6,7 @@ This repo is git-cloned into a running jupyter hub notebook instance.
 
 Jupyter notebooks are automatically created by a Travis deployment triggered from [mantaray](https://github.com/oceanprotocol/mantaray). 
 
-The repo relies on a utilities library which is cloned and pip-installed into the virtual environment. This allows devevelopment in the source repo (mantaray) and testing in the deployed notebooks (which have a different path and environment). This sub-package is found in the `utilities_subpackage` folder, and is called `mantaray_utilities`.
+The repo relies on a utilities library which is cloned and pip-installed into the virtual environment. This allows development in the source repo (mantaray) and testing in the deployed notebooks (which have a different path and environment). This sub-package is found in the `utilities_subpackage` folder, and is called `mantaray_utilities`.
 
 
 # Managing jubyter hub cluster from the command line
